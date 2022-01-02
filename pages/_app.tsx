@@ -1,4 +1,5 @@
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import PlayerLayout from "../components/playerLayout";
 // Reset CSS to be the same in every browser. All browsers apply CSS differently.
 import "reset-css";
 
@@ -34,7 +35,9 @@ const theme = extendTheme({
 const MyApp = ({ Component, pageProps }) => {
   return (
     <ChakraProvider theme={theme}>
-      <Component {...pageProps} />;
+      <PlayerLayout>
+        <Component {...pageProps} />;
+      </PlayerLayout>
     </ChakraProvider>
   );
 };
