@@ -1,6 +1,6 @@
 import { Box, Flex, Input, Button } from "@chakra-ui/layout";
 import { useRouter } from "next/router";
-import { useSWRConfig } from "swr";
+import { useSWRConfig } from "swr"; // update the local cache of the app
 import { auth } from "../lib/mutations";
 import { FC, useState } from "react";
 
